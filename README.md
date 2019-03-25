@@ -10,7 +10,7 @@ The framework includes following step:
 4. _Performance evaluation_
 5. _Results saving_
 
-####Main features
+#### Main features
 * _Generability_: Variaty of models and methods are supported and it can be used in a number of tasks 
 (such as preprocessing, dimensionality reduction, classification, 
 regression, clustering, statistical tests, etc.)
