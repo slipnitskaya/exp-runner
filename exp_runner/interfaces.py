@@ -3,6 +3,7 @@ import abc
 from typing import Any
 from typing import Dict
 from typing import List
+from typing import Tuple
 from typing import Union
 from typing import Iterable
 from typing import NoReturn
@@ -34,5 +35,7 @@ class Saver(abc.ABC):
 class Metric(abc.ABC):
 
     @abc.abstractmethod
-    def __call__(self, y_true: Iterable[Union[float, int]], y_pred: Iterable[Union[float, int]]) -> float:
+    def __call__(self,
+                 y_true: Iterable[Union[float, int]],
+                 y_pred: Iterable[Union[float, int]]) -> Union[float, Tuple[float, ...]]:
         pass
