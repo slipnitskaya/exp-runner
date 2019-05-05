@@ -1,7 +1,7 @@
 from setuptools import setup
 from exp_runner.version import __version__
 
-with open("README.md", "r") as fh:
+with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 setup(
@@ -13,7 +13,7 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/slipnitskaya/exp-runner.git',
-    packages=['exp-runner'],
+    packages=['exp_runner'],
     python_requires='>=3.6',
     install_requires=[
         'tqdm>=4.28.1',
@@ -24,8 +24,7 @@ setup(
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'Intended Audience :: Education',
-        'Intended Audience :: End Users/Desktop',
-        'Intended Audience :: Other Audience'
+        'Intended Audience :: Other Audience',
         'Intended Audience :: Science/Research',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
@@ -35,7 +34,7 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Topic :: Education :: Testing',
         'Topic :: Office/Business',
-        'Topic :: Other/Nonlisted Topic'
+        'Topic :: Other/Nonlisted Topic',
         'Topic :: Scientific/Engineering',
         'Topic :: Software Development :: Libraries',
         'Natural Language :: English',
@@ -43,6 +42,6 @@ setup(
     ],
     keywords=[
         'pipeline framework modelling model training testing classification regression clustering',
-        'pipeline framework data analysis',
-              ]
+        'pipeline framework data analysis'
+    ]
 )
