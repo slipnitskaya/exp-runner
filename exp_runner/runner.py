@@ -13,6 +13,7 @@ from typing import Any
 from typing import Dict
 from typing import List
 from typing import Type
+from typing import Tuple
 from typing import Union
 
 RANDOM_SEED = 42
@@ -83,12 +84,12 @@ def run(experiment_name: str,
         model = model.fit(X_train, y_train)
 
         y_pred: np.ndarray = model.predict(X_test)
-        performance: float = metric(y_test, y_pred)
+        performance: Union[float, Tuple[float, ...]] = metric(y_test, y_pred)
 
         eval_results.append({
             'filename': entry_fname,
             'desc': entry_desc,
-            'perf': str(performance),
+            'perf': performance,
             'X_train': X_train,
             'y_train': y_train,
             'X_test': X_test,
